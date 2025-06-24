@@ -1,0 +1,52 @@
+# Node.js (React frontend)
+my-blog/node_modules/
+my-blog/.env
+my-blog/.env.*
+my-blog/dist/
+my-blog/build/
+my-blog/.next/
+my-blog/.cache/
+my-blog/yarn.lock
+my-blog/package-lock.json
+
+# Log files
+*.log
+
+# macOS system files
+.DS_Store
+
+# Linux backup files
+*~
+
+# VS Code settings
+.vscode/
+
+# Python (if any backend or scripts)
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+venv/
+ENV/
+*.egg
+.Python
+
+# Editor swap/backup files
+*.swp
+*.swo
+
+# Test/coverage
+coverage/
+*.cover
+*.pyc
+.pytest_cache/
+htmlcov/
+.nox/
+.tox/
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Miscellaneous
+*.tmp
