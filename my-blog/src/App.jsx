@@ -2,6 +2,7 @@
 import Button from "./components/button";
 import "./App.css";
 import Card from "./components/card";
+import Navbar from "./components/navbar";
 
 function HomePage() {
   const cardsData = [
@@ -54,21 +55,20 @@ function HomePage() {
 
   return (
     <>
+      <Navbar />
       <h1 className="text-5xl font-bold">Welcome to My Blog</h1>
       <Button />
       <div className="min-h-screen bg-gray-100 flex flex-wrap justify-center items-center p-4">
-        {
-          (cardsData.map((card) => (
-            <Card
-              key={card.id} // Use unique ID for each card
-              title={card.title}
-              description={card.description}
-              imageUrl={card.imageUrl}
-              imageAlt={card.imageAlt}
-              buttonText={card.buttonText}
-            />
-          )))
-        }
+        {cardsData.map((card) => (
+          <Card
+            key={card.id} // Use unique ID for each card
+            title={card.title}
+            description={card.description}
+            imageUrl={card.imageUrl}
+            imageAlt={card.imageAlt}
+            buttonText={card.buttonText}
+          />
+        ))}
 
         {/* You can add many more cards with different content */}
       </div>
